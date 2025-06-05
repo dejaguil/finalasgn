@@ -1,0 +1,21 @@
+{
+  "name": "helo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "deploy": "gh-pages -d dist"
+}
+,
+  "devDependencies": {
+    "vite": "^6.3.5"
+  },
+  "dependencies": {
+    "gh-pages": "^6.3.0",
+    "lil-gui": "^0.20.0",
+    "three": "^0.177.0"
+  }
+}
