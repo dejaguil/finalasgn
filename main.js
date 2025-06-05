@@ -72,12 +72,12 @@ gui.addColor(new ColorGUIHelper(hemiLight, 'color'), 'value').name('Hemisphere S
 gui.addColor(new ColorGUIHelper(hemiLight, 'groundColor'), 'value').name('Hemisphere Ground');
 gui.add(hemiLight, 'intensity', 0, 5, 0.01);
 const loader = new THREE.TextureLoader();
-const pufferTexture = loader.load('./public/pufferfish1.jpg');
-const coralTexture = loader.load('./public/coral.jpg');
-const jellyTexture = loader.load('./public/jellyfish.jpg');
+const pufferTexture = loader.load('public/pufferfish1.jpg');
+const coralTexture = loader.load('public/coral.jpg');
+const jellyTexture = loader.load('public/jellyfish.jpg');
 jellyTexture.colorSpace = THREE.SRGBColorSpace;
-const texture = loader.load('./public/flower.jpg');
-const bgTexture = loader.load('./public/underwater.jpg');
+const texture = loader.load('public/flower.jpg');
+const bgTexture = loader.load('public/underwater.jpg');
 bgTexture.colorSpace = THREE.SRGBColorSpace;
 scene.background = bgTexture;
 texture.colorSpace = THREE.SRGBColorSpace;
@@ -160,7 +160,7 @@ for (let i = 0; i < 50; i++) {
   bubbleClones.push(bubble); 
 }
 
-const seaweedTexture = loader.load('./public/seaweed.jpg');
+const seaweedTexture = loader.load('public/seaweed.jpg');
 seaweedTexture.colorSpace = THREE.SRGBColorSpace;
 
 
